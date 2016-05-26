@@ -3,23 +3,27 @@
 
 /* general */
 p {
-	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 18px;
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 }
 h1 {
-	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 48px;
-	width: 100px;
+	font-size: 36px;
+	width: 50%;
+
+	margin-bottom: 50px;
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
 }
+
 
 /* header */
 html, body {
 	height: 100%;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .wide {
 	  width: 100%;
@@ -56,16 +60,18 @@ html, body {
 	background-color: transparent;
 	color: black;
 	font-style: italic;
+	font-weight: bold;
 }
 .affix {
 	top: 3%;
 	position: fixed;
 }
 
-/* subtitles */
 a:hover, a:visited, a:link, a:active {
 	text-decoration: none;
 }
+
+/* link effects */
 
 figure {
 	position: relative;
@@ -166,4 +172,102 @@ figure:hover {
 	border-left: 1px solid #fff;
 	transform: scale(1, 0);
 	transform-origin: 0 100%;
+}
+
+/* footer */
+
+footer {
+	height: 30%;
+	padding: 20px;
+	margin-top: 200px;
+	background-color: black;
+
+	text-align: center;
+	color: white;
+}
+
+footer p {
+	padding-top: 100px;
+	line-height: 200%;
+}
+
+footer a, footer a:link, footer a:visited, footer a:active, footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	font-weight: bold;
+}
+
+/* bio */
+
+.portrait-wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+
+	margin-top: 8%;
+}
+
+.portrait-wrapper img {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	transform: translateX(-50%);
+
+	border: 3px;
+	border-style: solid;
+	border-color: #040B31;
+}
+
+.portrait-wrapper hr {
+	position: absolute;
+	background-image: linear-gradient(to right, rgba(4, 11, 49, 0), rgba(4, 11, 49, 1), rgba(4, 11, 49, 0));
+	z-index: -1;
+
+	margin-top: 5%;
+	height: 3px;
+	width: 100%;
+}	
+
+.portrait-wrapper p {
+	position: relative;
+	padding-top: 15%;
+	width: 50%;
+}
+
+.button {
+	position: relative;
+	margin-top: 5%;
+	
+	width: 150px;
+	height: 100px;
+	padding-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+
+	border: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	color: #011C4F;
+
+	font-size: 18pt;
+	font-weight: bold;
+
+	transition: background-color 1s, color 1s;
+
+}
+
+.button:hover {
+	background-color: #011C4F;
+	border-color: #011C4F;
+	color: white;
+	cursor: pointer;
+	transition: background-color .25s cubic-bezier(0, 0, 0.74, -0.16), color .5s cubic-bezier(0, 0, 1, -0.14)
+}
+
+.button a {
+	text-decoration: none;
+	color: #011C4F;
 }
